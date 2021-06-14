@@ -1,0 +1,28 @@
+#passwordfile1, #dpane, #adpane1,#Athexit,#qpane{
+    -fx-background-color: rgba(253,137,165, 0.7);
+}
+
+#signinbtn:hover,#exit:hover,#Accountreachbtn:hover,#AdmInformation:hover
+,#Admmodifybtn:hover,#Admsavebtn:hover,#UsrInformation:hover,#Coapane:hover,
+#Athpane:hover,#Athsavebtn:hover,#tbc1:hover,#tb2:hover,#tb3:hover,
+#btnr:hover,#signout1:hover{
+    -fx-background-color: rgba(78,110,242, 1);
+    -fx-border-radius: 30px;
+    -fx-font-size: 14px;
+}
+
+#title, #war,#acid,#pdid,#Admaccount,#Admpassword,#Admid,#Athname,
+#Athid,#address,#Athcoach,#Athrela,#Athidcard,#Athschool,#Athguardian,
+#Athcontact{
+    width: 80%;
+    background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(43,43,43, 0.5), 10.0,0, 7, 7);
+}
+
+#passwordfile, #accountfile,#Athnamefile,#Athidfile,#Athaddressfile,#Athcoachfile,
+#Athrelafile,#Athidcardfile,#Athschoolfile,#Athguardianfile,#Athcontactfile{
+    -fx-background-color: #ffffff00;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgba(43,43,43, 1);
+}
+

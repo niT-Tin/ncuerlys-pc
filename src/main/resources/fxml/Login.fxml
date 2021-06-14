@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<fx:root prefHeight="400.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo1.Controller1">
+   <children>
+      <Button fx:id="loginBtn" layoutX="272.0" layoutY="315.0" mnemonicParsing="false" onAction="#login" text="login" />
+      <TextField fx:id="accountText" layoutX="169.0" layoutY="153.0" prefHeight="24.0" prefWidth="263.0" promptText="account" />
+      <PasswordField fx:id="passwordText" layoutX="169.0" layoutY="232.0" prefHeight="24.0" prefWidth="263.0" promptText="password" />
+      <Label layoutX="56.0" layoutY="158.0" prefHeight="30.0" prefWidth="60.0" text="账号" />
+      <Label layoutX="56.0" layoutY="232.0" prefHeight="30.0" prefWidth="60.0" text="密码" />
+   </children>
+   <stylesheets>
+      <URL value="@/css/main.css" />
+   </stylesheets>
+</fx:root>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<fx:root fx:id="qpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" type="Pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo1.part2.panes.Message">
+   <children>
+      <TabPane layoutY="86.0" prefHeight="514.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tbc1" text="成员信息">
+               <content>
+                  <TableView fx:id="tbv1">
+                     <columns>
+                        <TableColumn fx:id="c1" prefWidth="70" text="姓名" />
+                        <TableColumn fx:id="c2" prefWidth="50" text="性别" />
+                        <TableColumn fx:id="c3" prefWidth="100" text="联系方式" />
+                        <TableColumn fx:id="c4" prefWidth="150" text="身份证号" />
+                        <TableColumn fx:id="c5" prefWidth="230" text="地址" />
+                        <TableColumn fx:id="c6" prefWidth="180" text="学校" />
+                        <TableColumn fx:id="c7" prefWidth="70" text="教练" />
+                        <TableColumn fx:id="c8" prefWidth="70" text="监护人" />
+                        <TableColumn fx:id="c9" prefWidth="60" text="关系" />
+                     </columns>
+                  </TableView>
+               </content>
+          </Tab>
+          <Tab fx:id="tb2" onSelectionChanged="#test" text="赛程查询">
+               <content>
+                  <TableView fx:id="tbv2">
+                     <columns>
+                        <TableColumn fx:id="c01" prefWidth="400" text="赛事名称"/>
+                        <TableColumn fx:id="c02" prefWidth="400" text="赛事时间"/>
+                     </columns>
+                  </TableView>
+               </content>
+          </Tab>
+            <Tab fx:id="tb3" onSelectionChanged="#grade" text="成绩录入">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="353.0" layoutY="115.0" text="名字">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="name1" layoutX="393.0" layoutY="113.0" prefHeight="23.0" prefWidth="89.0" />
+                        <TextField fx:id="tf1" id="1" layoutX="390.0" layoutY="165.0" prefHeight="23.0" prefWidth="47.0" />
+                        <TextField fx:id="tf2" id="2" layoutX="478.0" layoutY="166.0" prefHeight="23.0" prefWidth="47.0" />
+                        <TextField fx:id="tf3" id="3" layoutX="563.0" layoutY="166.0" prefHeight="23.0" prefWidth="47.0" />
+                        <TextField fx:id="tf4" id="4" layoutX="390.0" layoutY="220.0" prefHeight="23.0" prefWidth="47.0" />
+                        <TextField fx:id="tf5" id="5" layoutX="478.0" layoutY="220.0" prefHeight="23.0" prefWidth="47.0" />
+                        <TextField fx:id="tf6" id="6" layoutX="563.0" layoutY="220.0" prefHeight="23.0" prefWidth="47.0" />
+                        <Label layoutX="393.0" layoutY="147.0" text="第一局">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="481.0" layoutY="147.0" text="第二局">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="393.0" layoutY="201.0" text="第四局">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="481.0" layoutY="201.0" text="第五局">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="566.0" layoutY="147.0" text="第三局">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="566.0" layoutY="201.0" text="第六局">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="300.0" layoutX="404.0" layoutY="85.0" startX="-100.0" />
+                        <Line endX="300.0" layoutX="404.0" layoutY="290.0" startX="-100.0" />
+                        <Line endX="-100.0" endY="205.0" layoutX="405.0" layoutY="86.0" startX="-100.0" />
+                        <Line endX="-100.0" endY="205.0" layoutX="805.0" layoutY="85.0" startX="-100.0" />
+                        <Button fx:id="btnr" layoutX="478.0" layoutY="251.0" onAction="#getin" mnemonicParsing="false" text="录入">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="cb" layoutX="520.0" layoutY="113.0" prefHeight="23.0" prefWidth="110.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="14.0" layoutY="5.0" text="你好，裁判">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="signout1" layoutX="101.0" layoutY="3.0" mnemonicParsing="false" onAction="#to0" text="退出" />
+      <Label layoutX="14.0" layoutY="41.0" text="江西·2021年南昌市保龄球大赛">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="900.0" layoutX="101.0" layoutY="34.0" startX="-100.0" />
+      <Label layoutX="14.0" layoutY="65.0" text="江西南昌市爱运动保龄球馆" />
+   </children>
+   <stylesheets>
+      <URL value="@/css/main.css" />
+   </stylesheets>
+</fx:root>

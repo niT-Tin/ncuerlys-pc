@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="adpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1256.0" type="Pane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo1.ControlMainsurface">
+   <children> <!--accessibleText="%key.unspecified"-->
+      <Button fx:id="exit" layoutX="170.0" layoutY="17.0" mnemonicParsing="false" onAction="#exit" prefHeight="38.0" prefWidth="91.0" text="退出" />
+      <TabPane layoutX="14.0" layoutY="67.0" prefHeight="663.0" prefWidth="1206.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+             <Tab fx:id="AdmInformation" onSelectionChanged="#selected" text="管理员信息">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+   <!--                         <ScrollPane fx:id="sp" />-->
+                           <FlowPane layoutX="6.0" layoutY="8.0" prefHeight="655.0" prefWidth="1001.0">
+                              <children>
+                                 <Pane prefHeight="651.0" prefWidth="995.0">
+                                    <children>
+                                       <Button fx:id="Admsavebtn" layoutX="450.0" layoutY="400.0" mnemonicParsing="false" onAction="#Admsavebtn" prefHeight="49.0" prefWidth="82.0" text="保存" />
+   <!--                                    <Label fx:id="Admname" layoutX="40.0" layoutY="42.0" prefHeight="30.0" prefWidth="41.0" text="姓名" />-->
+   <!--                                    <TextArea fx:id="Admnamefile"   layoutX="142.0" layoutY="35.0" prefHeight="44.0" prefWidth="232.0" />-->
+                                       <Label fx:id="Admid" layoutX="215.0" layoutY="78.0" prefHeight="30.0" prefWidth="59.0" text="id">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font></Label>
+   <!--                                    <Label fx:id="Admidcard" layoutX="15.0" layoutY="349.0" prefHeight="30.0" prefWidth="63.0" text="idcard" />-->
+                                       <Label fx:id="Admaccount" layoutX="205.0" layoutY="194.0" prefHeight="30.0" prefWidth="59.0" text="账号">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font></Label>
+                                       <Label fx:id="Admpassword" layoutX="205.0" layoutY="306.0" prefHeight="30.0" prefWidth="59.0" text="密码">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font></Label>
+                                       <TextArea fx:id="Admidfile" layoutX="366.0" layoutY="72.0" prefHeight="44.0" prefWidth="230.0" />
+                                       <TextArea fx:id="Admaccountfile" layoutX="363.0" layoutY="188.0" prefHeight="44.0" prefWidth="236.0" />
+   <!--                                    <TextArea fx:id="Admidcardfile" layoutX="142.0" layoutY="342.0" prefHeight="44.0" prefWidth="238.0" />-->
+                                       <TextArea fx:id="Admpasswordfile" layoutX="361.0" layoutY="300.0" prefHeight="44.0" prefWidth="241.0" />
+                                    </children>
+                                 </Pane>
+                              </children>
+                        </FlowPane>
+                        </children>
+                     </AnchorPane>
+               </content>
+             </Tab>
+             <Tab fx:id="UsrInformation" text="用户信息">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="689.0" prefWidth="1201.0">
+                        <children>
+                           <TabPane layoutX="2.0" layoutY="9.0" prefHeight="641.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+                              <tabs>
+                                  <Tab fx:id="Coapane" onSelectionChanged="#Acopanef" text="教练">
+                                      <content>
+                                          <TableView fx:id="tbv" prefHeight="592.0" prefWidth="1178.0">
+                                              <columns>
+                                                  <TableColumn fx:id="c1" prefWidth="380" text="账号" />
+                                                  <TableColumn fx:id="c2" prefWidth="350.0" text="身份证号" />
+                                                 <!-- <TableColumn fx:id="c3" prefWidth="150.0" text="学校" />
+                                                  <TableColumn fx:id="c4" prefWidth="150.0" text="教练" />
+                                                  <TableColumn fx:id="c5" prefWidth="150.0" text="监护人" />
+                                                  <TableColumn fx:id="c6" prefWidth="150.0" text="关系" />-->
+                                                  <TableColumn fx:id="c7" prefWidth="350.0" text="联系方式" />
+                                              </columns>
+                                          </TableView>
+                                      </content>
+                                  </Tab>
+                                  <Tab fx:id="Athpane" onSelectionChanged="#athpanef" text="运动员">
+                                      <content>
+                                          <TableView fx:id="tbv1" prefHeight="592.0" prefWidth="1178.0">
+                                          <columns>
+                                              <TableColumn fx:id="c01" prefWidth="140" text="账号" />
+                                              <TableColumn fx:id="c11" prefWidth="160" text="身份证号" />
+                                              <TableColumn fx:id="c12" prefWidth="140.0" text="地址" />
+                                              <TableColumn fx:id="c13" prefWidth="140.0" text="学校" />
+                                              <TableColumn fx:id="c14" prefWidth="140.0" text="教练" />
+                                              <TableColumn fx:id="c15" prefWidth="140.0" text="监护人" />
+                                              <TableColumn fx:id="c16" prefWidth="140.0" text="关系" />
+                                              <TableColumn fx:id="c17" prefWidth="140.0" text="联系方式" />
+                                          </columns>
+                                          </TableView>
+                                      </content>
+                                  </Tab>
+                              </tabs>
+                           </TabPane>
+                        </children>
+                     </AnchorPane>
+               </content>
+
+             </Tab>
+         </tabs>
+      </TabPane>
+      <Label layoutX="25.0" layoutY="12.0" prefHeight="49.0" prefWidth="145.0" text="你好，管理员！！！" />
+      <Label />
+      <Button id="Accountreachbtn" layoutX="514.0" layoutY="25.0" mnemonicParsing="false" onAction="#ReachAccountbtn" text="账号搜索" />
+      <TextField fx:id="Accountreachfile" layoutX="311.0" layoutY="25.0" prefHeight="23.0" prefWidth="179.0" promptText="账号" />
+<!--      <TextField fx:id="passwordreachfile" layoutX="507.0" layoutY="25.0" promptText="password" />-->
+   </children>
+    <stylesheets>
+        <URL value="@/css/main.css" />
+    </stylesheets>
+</fx:root>

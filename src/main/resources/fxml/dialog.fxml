@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<?import java.net.URL?>
+<fx:root fx:id="dpane" type="Pane" prefHeight="196.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo1.Dialog">
+   <children>
+      <Label fx:id="war" layoutX="93.0" layoutY="44.0" prefHeight="108.0" prefWidth="204.0" text="账号不存在">
+         <font>
+            <Font size="30"/>
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@/css/main.css"/>
+   </stylesheets>
+</fx:root>

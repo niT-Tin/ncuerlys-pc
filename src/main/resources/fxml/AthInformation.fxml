@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="Athexit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="987.0" type="Pane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo1.ControlAthInformation">
+   <children>
+<!--      prefWidth="69.0" text="修改" />-->
+      <Label fx:id="Athname" layoutX="37.0" layoutY="42.0" prefHeight="38.0" prefWidth="82.0" text="姓名">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextArea fx:id="Athnamefile" layoutX="131.0" layoutY="42.0" prefHeight="23.0" prefWidth="236.0" />
+      <Label fx:id="Athid" layoutX="22.0" layoutY="146.0" prefHeight="38.0" prefWidth="54.0" text="id">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="address" layoutX="22.0" layoutY="298.0" prefHeight="38.0" prefWidth="54.0" text="地址">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="Athcoach" layoutX="22.0" layoutY="446.0" prefHeight="38.0" prefWidth="54.0" text="教练">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="Athrela" layoutX="22.0" layoutY="592.0" prefHeight="38.0" prefWidth="54.0" text="关系">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="Athidcard" layoutX="441.0" layoutY="146.0" prefHeight="38.0" prefWidth="82.0" text="身份证">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="Athschool" layoutX="441.0" layoutY="298.0" prefHeight="38.0" prefWidth="82.0" text="学校">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="Athguardian" layoutX="441.0" layoutY="446.0" prefHeight="38.0" prefWidth="82.0" text="监护人">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="Athcontact" layoutX="426.0" layoutY="592.0" prefHeight="38.0" prefWidth="98.0" text="联系方式">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextArea fx:id="Athidfile" layoutX="78.0" layoutY="147.0" prefHeight="23.0" prefWidth="236.0" />
+      <TextArea fx:id="Athaddressfile" layoutX="78.0" layoutY="299.0" prefHeight="23.0" prefWidth="236.0" />
+      <TextArea fx:id="Athcoachfile" layoutX="78.0" layoutY="447.0" prefHeight="23.0" prefWidth="236.0" />
+      <TextArea fx:id="Athrelafile" layoutX="78.0" layoutY="592.0" prefHeight="23.0" prefWidth="236.0" />
+      <TextArea fx:id="Athidcardfile" layoutX="523.0" layoutY="147.0" prefHeight="23.0" prefWidth="236.0" />
+      <TextArea fx:id="Athschoolfile" layoutX="523.0" layoutY="299.0" prefHeight="23.0" prefWidth="236.0" />
+      <TextArea fx:id="Athguardianfile" layoutX="523.0" layoutY="447.0" prefHeight="23.0" prefWidth="236.0" />
+      <TextArea fx:id="Athcontactfile" layoutX="523.0" layoutY="593.0" prefHeight="23.0" prefWidth="236.0" />
+      <Button fx:id="Athsavebtn" layoutX="367.0" layoutY="681.0" mnemonicParsing="false" onAction="#Athsavebtn" prefHeight="38.0" prefWidth="69.0" text="保存" />
+   </children>
+      <stylesheets>
+            <URL value="@/css/main.css" />
+      </stylesheets>
+</fx:root>

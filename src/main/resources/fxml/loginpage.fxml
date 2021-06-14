@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root id="passwordfile1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="862.0" type="Pane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo1.ControlLogin">
+   <children>
+      <Button fx:id="signinbtn" layoutX="376.0" layoutY="395.0" mnemonicParsing="false" onAction="#sigin" prefHeight="43.0" prefWidth="63.0" text="登录" />
+<!--      <Button fx:id="registerbtn" onAction="#registerbtn" layoutX="296.0" layoutY="396.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="63.0" text="注册" />-->
+      <Label fx:id="acid" layoutX="194.0" layoutY="228.0" prefHeight="31.0" prefWidth="72.0" text="账号" textFill="#000000">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="pdid" layoutX="194.0" layoutY="284.0" prefHeight="31.0" prefWidth="72.0" text="密码">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordfile" layoutX="314.0" layoutY="286.0" prefHeight="26.0" prefWidth="188.0" promptText="密码" />
+      <TextField fx:id="accountfile" layoutX="314.0" layoutY="230.0" prefHeight="26.0" prefWidth="188.0" promptText="账号" />
+      <Label fx:id="title" layoutX="263.0" layoutY="96.0" prefHeight="74.0" prefWidth="336.0" text="保龄球记分系统登录">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@/css/main.css" />
+   </stylesheets>
+</fx:root>
